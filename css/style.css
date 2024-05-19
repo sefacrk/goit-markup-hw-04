@@ -262,7 +262,14 @@ a {
 .team-card-text {
   text-align: center;
 }
-
+.team-card-social-link-list {
+  display: flex;
+  align-items: center;
+}
+..team-card-social-link-list li{
+  display: flex;
+  gap: 24px;
+}
 /* FOURTH SECTION */
 .fourth-section {
   padding-top: 120px;
