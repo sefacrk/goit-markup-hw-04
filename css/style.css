@@ -154,11 +154,13 @@ a {
 
 .first-section {
   background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   padding: 188px 0;
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
 }
 
 .first-section-title {
@@ -168,7 +170,6 @@ a {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
 }
 
 .first-section-container {
@@ -288,6 +289,31 @@ second-section-list-item use {
 .team-card-social-link-list {
   display: flex;
   align-items: center;
+  
+}
+.icons-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.icons-list li {
+  width: 40px;
+  height: 40px;
+}
+.icons-list a {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons-list a:hover {
+  background-color: #404bbf;
+}
+.icons-list a:active {
+  background-color: #404bbf;
 }
 .team-card-social-link-list ul {
   display: flex;
@@ -359,7 +385,12 @@ second-section-list-item use {
   background-color: #2e2f42;
   padding: 100px 0;
   display: flex;
-  align-items: baseline
+  align-items: baseline;
+}
+.container footer-container {
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px;
 }
 
 .footer-p {
@@ -379,14 +410,19 @@ second-section-list-item use {
 }
 .team-card-social-link-list{
   flex-direction: column;
-  gap: 16px;
+ 
   
 }
-.team-card-social-link-list-content {
+.social-list-text {
   color: #FFFFFF;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2%;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  gap: 16px;
 }
