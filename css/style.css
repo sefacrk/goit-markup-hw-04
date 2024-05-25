@@ -85,8 +85,20 @@ a {
 .nav {
   display: flex;
   align-items: center;
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.nav::after {
+  content: inherit;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px; 
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -128,6 +140,7 @@ a {
 
 .nav-address {
   font-style: normal;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list {
@@ -175,6 +188,7 @@ a {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
+  
 }
 
 .first-section-container {
@@ -215,6 +229,25 @@ a {
 /* SECOND SECTION */
 .second-section {
   padding: 120px 0;
+  display: flex;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99; 
+  margin-bottom: 8px;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 .container second-section-container {
   align-items: center;
@@ -397,7 +430,7 @@ second-section-list-item use {
   padding: 100px 0;
   display: flex;
   align-items: baseline;
-  
+  margin: auto;
   
 }
 .container footer-container {
