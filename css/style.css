@@ -73,7 +73,7 @@ a {
   color: #404bbf;
   box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.header-container container::after {
+.header-container::after {
   content: ;
   width: 100%;
   position: absolute;
@@ -92,12 +92,9 @@ a {
   justify-content: space-between;
   position: relative;
   color:  #404bbf;
-}
-.header-container container {
-  position: relative;
-  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -124,6 +121,10 @@ a {
 .nav-list {
   display: flex;
   gap: 40px;
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .nav-link {
@@ -236,41 +237,25 @@ a {
 /* SECOND SECTION */
 .second-section {
   padding: 120px 0;
+}
+.second-section-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 .icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  border: 1px solid #8e8f99; 
-  margin-bottom: 8px;
-}
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-.container second-section-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
 }
+
 .second-section-list-item {
   width: calc((100%-72px) / 4);
-}
-second-section-list-item use {
-  background-color: #8E8F99;
 }
 
 .visually-hidden {
@@ -285,11 +270,9 @@ second-section-list-item use {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.second-section-list {
-  display: flex;
-  gap: 24px;
-  
+.second-section-list-container {
+ align-items: center;
+ justify-content: center;
 }
 
 /* THIRD SECTION */
@@ -437,40 +420,33 @@ second-section-list-item use {
 
 /* FOOTER */
 .footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   background-color: #2e2f42;
   padding: 100px 0;
-  display: flex;
-  align-items: baseline;
   margin: auto;
+  flex-direction: row;
 }
-
-.container footer-container {
-  display: flex;
-  align-items: baseline;
+.footer-container {
   margin-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  
 }
-
 .footer-p {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
-
 .footer-logo-span {
   color: #f4f4fd;
-}
-
-.team-card-social-link-list{
-  flex-direction: column; 
-  padding-left: 120px;
-  width: 208px;
-  height: 80px;
 }
 .social-list-text {
   color: #FFFFFF;
@@ -483,7 +459,18 @@ second-section-list-item use {
   display: flex;
 }
 .social-list {
-  display: flex;
   gap: 16px;
-  flex-direction: row;
+}
+.team-card-social-link-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.icons-list {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  gap: 8px; 
 }
