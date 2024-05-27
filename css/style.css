@@ -225,14 +225,21 @@ a {
 /* SECOND SECTION */
 .second-section {
   padding: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .second-section-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  flex: 1;
+
+  
 }
 .icon-container {
+  width: 264px;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
@@ -240,10 +247,15 @@ a {
   margin-bottom: 8px;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-
-.second-section-list-item {
-  width: calc((100%-72px) / 4);
+.icon-container use {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ width: 64px;
+ height: 64px;
 }
 
 .visually-hidden {
@@ -258,11 +270,6 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.second-section-list-container {
- align-items: center;
- justify-content: center;
-}
-
 /* THIRD SECTION */
 .third-section {
   background-color: #f4f4fd;
@@ -312,15 +319,18 @@ a {
 .team-card-text {
   text-align: center;
 }
-.team-card-social-link-list {
-  display: flex;
-  align-items: center;
-  
-}
-.icons-list {
+
+.icon-list {
   display: flex;
   justify-content: center;
+  
  gap: 24px;
+}
+.icon-list svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .team-card-social-link-list ul {
