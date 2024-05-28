@@ -248,6 +248,12 @@ a {
   display: flex;
   flex-direction: column;
 }
+.icon-container svg {
+ 
+  width: 64px;
+  height: 64px;
+}
+ 
 
 .visually-hidden {
   position: absolute;
